@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# IST 270 Codespace — things that should never be committed
+# ---------------------------------------------------------------------------
+
+# Commit your workshop answer files. These patterns exclude generated noise.
+
+# Database dumps — large, and regenerable with the workshop starter scripts
+*.dump
+*.backup
+*.tar.gz
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/ipch/
+*.log
+
+# Local pgAdmin exports (if a student exports server definitions)
+pgadmin_servers_export.json

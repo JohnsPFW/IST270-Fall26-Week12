@@ -1,0 +1,70 @@
+// IST 270 Week 10 workshops in GitHub Codespaces.
+//
+// What this template gives every student, automatically, with no local install:
+//   * PostgreSQL 16 running on localhost:5432
+//   * pgAdmin 4 in the browser on port 5050
+//   * The Microsoft PostgreSQL extension in the VS Code sidebar
+//   * psql in the terminal
+//
+// All three clients use the SAME connection details, which are also the same
+// details students use for a local PostgreSQL install:
+//
+//     Host: localhost     Port: 5432     User: postgres     Password: postgres
+//
+// See ../README.md for the student walkthrough.
+
+{
+	"name": "IST 270 Week 10 - PostgreSQL + pgAdmin",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+
+	// 5432 = PostgreSQL (students stay inside the Codespace; no need to forward)
+	// 5050 = pgAdmin 4 web UI (open this in the browser)
+	"forwardPorts": [5432, 5050],
+	"portsAttributes": {
+		"5432": {
+			"label": "PostgreSQL 16 (localhost:5432)",
+			"onAutoForward": "ignore"
+		},
+		"5050": {
+			"label": "pgAdmin 4",
+			"onAutoForward": "openBrowser",
+			"protocol": "http"
+		}
+	},
+
+	// One-time setup: install PostgreSQL, install pgAdmin, create the databases,
+	// load the practice dataset. Safe to re-run; each step skips itself if it
+	// has already been done.
+	"postCreateCommand": "bash .devcontainer/setup.sh",
+
+	// Runs every time the Codespace container starts, including after the
+	// Codespace has been stopped and restarted. Makes sure PostgreSQL and
+	// pgAdmin are actually running before the student touches anything.
+	"postStartCommand": "bash .devcontainer/start-services.sh",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-ossdata.vscode-pgsql"
+			],
+			"settings": {
+				"terminal.integrated.env.linux": {
+					"PGHOST": "localhost",
+					"PGPORT": "5432",
+					"PGUSER": "postgres",
+					"PGDATABASE": "postgres",
+					"PGPASSWORD": "postgres"
+				},
+				// false = the extension uses its own bundled tools service, which is
+				// the most reliable option inside a container. Flip to true only
+				// if you have confirmed the native psql backend works on your image.
+				"pgsql.enableNativeBackend": false,
+				"pgsql.pgBinaryDirs": ["/usr/lib/postgresql/16/bin"]
+			}
+		}
+	}
+}

@@ -1,0 +1,2 @@
+-- Week 10b answers
+-- Save your JOIN queries and explanations here.
