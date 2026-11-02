@@ -66,7 +66,7 @@ Add at least three subjects, link tutors to subjects in `TutorSubjects`, and add
 Write `SELECT` queries that answer these questions:
 
 1. Which appointments are in a location you chose?
-2. Which subjects can one tutor teach? Join `TutorSubjects` to `Subjects` so the result shows subject names.
+2. Which `SubjectID` values are linked to one tutor in `TutorSubjects`? Find that tutor's `TutorID` first. You will turn IDs into names with joins in Week 10b.
 3. Which students have `Mathematics` as their major?
 
 Run each query, inspect the results, and save the SQL in your answer file. The habit to keep: preview the target rows with `SELECT` before `UPDATE` or `DELETE`.
