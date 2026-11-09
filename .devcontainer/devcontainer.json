@@ -1,4 +1,4 @@
-// IST 270 Week 10 workshops in GitHub Codespaces.
+// IST 270 Week 12 workshops in GitHub Codespaces.
 //
 // What this template gives every student, automatically, with no local install:
 //   * PostgreSQL 16 running on localhost:5432
@@ -14,7 +14,7 @@
 // See ../README.md for the student walkthrough.
 
 {
-	"name": "IST 270 Week 10 - PostgreSQL + pgAdmin",
+	"name": "IST 270 Week 12 - PostgreSQL + pgAdmin",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
 
 	"features": {

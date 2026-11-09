@@ -3,9 +3,9 @@
 set -euo pipefail
 
 case "${1:-}" in
-  week10a) db=week10a; file=workshops/week10a/starter/week10a_database.sql ;;
-  week10b) db=week10b; file=workshops/week10b/starter/week10b_database.sql ;;
-  *) echo "Usage: bash .devcontainer/reset-workshop.sh week10a|week10b" >&2; exit 2 ;;
+  week12a) db=week12a; file=workshops/week12a/starter/week12a_database.sql ;;
+  week12b) db=week12b; file=workshops/week12b/starter/week12b_database.sql ;;
+  *) echo "Usage: bash .devcontainer/reset-workshop.sh week12a|week12b" >&2; exit 2 ;;
 esac
 
 cd "$(dirname "$0")/.."

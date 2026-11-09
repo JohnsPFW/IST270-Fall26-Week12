@@ -1,10 +1,10 @@
-# Week 10b The Event Management JOIN
+# Week 12b The Event Management JOIN
 
-Use the `week10b` database in pgAdmin. This workshop combines data from separate tables so a result can show names instead of just IDs. The Codespace has already loaded four venues, three events, five attendees, and five registrations. Save your queries in [`answers/week10b.sql`](answers/week10b.sql).
+Use the `week12b` database in pgAdmin. This workshop combines data from separate tables so a result can show names instead of just IDs. The Codespace has already loaded four venues, three events, five attendees, and five registrations. Save your queries in [`answers/week12b.sql`](answers/week12b.sql).
 
 ## 1 Inspect the data
 
-Open **Query Tool** on `week10b`. Run these queries one at a time and inspect the results:
+Open **Query Tool** on `week12b`. Run these queries one at a time and inspect the results:
 
 ```sql
 SELECT * FROM Venues ORDER BY VenueID;

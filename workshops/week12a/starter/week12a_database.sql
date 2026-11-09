@@ -1,10 +1,10 @@
 -- ============================================================================
--- IST 270 — In-Class Workshop (Week 10a): Manipulating and Querying Data
+-- IST 270 — In-Class Workshop (Week 12a): Manipulating and Querying Data
 -- The Tutoring Center database
 --
--- Creates the schema and starting rows for the Week 10a workshop.
+-- Creates the schema and starting rows for the Week 12a workshop.
 --
--- The Codespace setup loads this file automatically into week10a.
+-- The Codespace setup loads this file automatically into week12a.
 -- ============================================================================
 
 -- IST 270: DDL-Only Schema Script

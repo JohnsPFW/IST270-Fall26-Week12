@@ -1,10 +1,10 @@
 -- ============================================================================
--- IST 270 — In-Class Workshop (Week 10b): The Event Management JOIN
+-- IST 270 — In-Class Workshop (Week 12b): The Event Management JOIN
 -- The Event Management database
 --
--- Creates the schema and starting rows for the Week 10b workshop.
+-- Creates the schema and starting rows for the Week 12b workshop.
 --
--- The Codespace setup loads this file automatically into week10b.
+-- The Codespace setup loads this file automatically into week12b.
 -- ============================================================================
 
 -- DDL for the Event Management Database

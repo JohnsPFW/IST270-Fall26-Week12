@@ -10,8 +10,8 @@
 # What it produces:
 #   1. PostgreSQL 16 installed and running on localhost:5432
 #   2. superuser "postgres" with password "postgres"
-#   3. database week10a (Tutoring Center workshop data)
-#   4. database week10b (Event Management workshop data)
+#   3. database week12a (Tutoring Center workshop data)
+#   4. database week12b (Event Management workshop data)
 #   5. pgAdmin 4 installed in web mode on port 5050, with a pre-registered
 #      server pointing at the local PostgreSQL instance
 #
@@ -28,8 +28,8 @@ PG_PORT="5432"
 PGADMIN_EMAIL="student@ist270.edu"
 PGADMIN_PASSWORD="ist270db"
 PGADMIN_PORT="5050"
-WORKSHOP_A_DB="week10a"
-WORKSHOP_B_DB="week10b"
+WORKSHOP_A_DB="week12a"
+WORKSHOP_B_DB="week12b"
 PGADMIN_VENV="/opt/pgadmin"
 PGADMIN_DATA_DIR="/var/lib/pgadmin"
 PGADMIN_CONFIG_FILE="${PGADMIN_DATA_DIR}/config_custom.py"
@@ -142,8 +142,8 @@ load_workshop() {
 	fi
 }
 
-load_workshop "${WORKSHOP_A_DB}" "tutors" "${WORKSHOP_DIR}/week10a/starter/week10a_database.sql"
-load_workshop "${WORKSHOP_B_DB}" "venues" "${WORKSHOP_DIR}/week10b/starter/week10b_database.sql"
+load_workshop "${WORKSHOP_A_DB}" "tutors" "${WORKSHOP_DIR}/week12a/starter/week12a_database.sql"
+load_workshop "${WORKSHOP_B_DB}" "venues" "${WORKSHOP_DIR}/week12b/starter/week12b_database.sql"
 
 # --- 4. pgAdmin 4 -------------------------------------------------------------
 # VERSION PIN - do not remove without checking the web assets first.
@@ -282,8 +282,8 @@ cat <<'EOF'
 
    PostgreSQL : localhost:5432   user: postgres   password: postgres
 
-   Databases  : week10a  (Tutoring Center workshop)
-                week10b  (Event Management JOIN workshop)
+   Databases  : week12a  (Tutoring Center workshop)
+                week12b  (Event Management JOIN workshop)
 
    pgAdmin 4  : open the "pgAdmin 4" tab in the Ports panel, or
                 run  bash .devcontainer/start-services.sh
