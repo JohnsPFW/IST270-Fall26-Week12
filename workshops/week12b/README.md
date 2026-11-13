@@ -62,3 +62,7 @@ Save and run a query for each question:
 3. What is the complete registration list with attendee full name, event name, and venue name? Join all four tables, starting from `Registrations`.
 
 For every join, decide which table's rows must remain in the result. Check your row count against the starter data before you move on.
+
+## Save and push your Week 12b work
+
+In the Codespace file explorer, open [`answers/week12b.sql`](answers/week12b.sql). Copy your completed queries and explanations into that file and save it. Then select **Source Control** in the left sidebar, stage `week12b.sql` with the **+** button, enter a commit message, and choose **Commit & Push**. Refresh your personal repository on GitHub and open the file to confirm your latest work is there. See the [full save and push instructions](../../README.md#save-and-push-your-work-to-github) if you need the terminal commands or help with the controls.

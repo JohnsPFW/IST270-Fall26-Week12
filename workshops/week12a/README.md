@@ -70,3 +70,7 @@ Write `SELECT` queries that answer these questions:
 3. Which students have `Mathematics` as their major?
 
 Run each query, inspect the results, and save the SQL in your answer file. The habit to keep: preview the target rows with `SELECT` before `UPDATE` or `DELETE`.
+
+## Save and push your Week 12a work
+
+In the Codespace file explorer, open [`answers/week12a.sql`](answers/week12a.sql). Copy your SQL from pgAdmin's Query Tool into that file and save it. Record the equivalent SQL or a clear comment for any row you changed through pgAdmin's data editor. Then select **Source Control** in the left sidebar, stage `week12a.sql` with the **+** button, enter a commit message, and choose **Commit & Push**. Refresh your personal repository on GitHub and open the file to confirm your latest work is there. See the [full save and push instructions](../../README.md#save-and-push-your-work-to-github) if you need the terminal commands or help with the controls.
